@@ -1,0 +1,27 @@
+@import "../Layout/LayoutVariables";
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'PFDinTextCondPro-Bold', Arial, serif;
+  line-height: 1;
+  color: $mainTextColor;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $mainLinkColor;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 40px;
+  padding: $indent*3 $indent*2;
+}
+
+.content-container {
+  background: $containerBackground;
+  padding: $indent $indent*4;
+}

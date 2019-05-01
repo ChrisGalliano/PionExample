@@ -1,0 +1,23 @@
+{
+  "name": "chrisgalliano/pion-example",
+  "description": "Example of Pion framework usage",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Galliano",
+      "email": "christian@galliano.info"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Src\\": "./src/"
+    }
+  },
+  "require-dev": {
+    "filp/whoops": "2.3.1"
+  },
+  "require": {
+    "chrisgalliano/pion": "^1.0.0"
+  }
+}

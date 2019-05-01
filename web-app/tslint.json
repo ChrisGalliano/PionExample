@@ -1,0 +1,27 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": [
+      true,
+      1
+    ],
+    "variable-name": [
+      true,
+      "check-format"
+    ],
+    "eofline": false,
+    "interface-name": false,
+    "no-angle-bracket-type-assertion": true,
+    "no-reference": false,
+    "object-literal-sort-keys": false,
+    "max-line-length": [
+      true,
+      180
+    ],
+    "space-before-function-paren": [true]
+  }
+}

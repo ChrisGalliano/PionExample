@@ -1,0 +1,31 @@
+@import "../Layout/LayoutVariables";
+@import "../Layout/Responsive";
+
+.homepage {
+  background: #ffffff;
+  padding: $indent*3;
+
+  .example {
+    &:not(:first-child) {
+      margin-top: $indent*3;
+    }
+
+    .title {
+      font-weight: 700;
+    }
+
+    .result {
+      padding: $indent;
+      background-color: #f7f7f7;
+      margin-top: $indent;
+    }
+  }
+
+  .example-include-image {
+    .result {
+      img {
+        max-width: $indent*20;
+      }
+    }
+  }
+}

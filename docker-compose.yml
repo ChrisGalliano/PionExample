@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: php/Dockerfile
+    volumes:
+      - ./web-app:/usr/share/nginx/html
+
+  composer:
+    image: composer/composer:php7
+    working_dir: /web-app
+    command: install --ignore-platform-reqs
+    volumes:
+      - ./web-app:/web-app
+    depends_on:
+      - php
+
+  gulp:
+    build:
+      context: ./
+      dockerfile: gulp/Dockerfile
+    volumes:
+      - ./web-app:/web-app
+      - ./gulp:/gulp
+    depends_on:
+      - php
+    environment:
+      - PION_EXMPL_DEBUG
+
+  nginx:
+    image: nginx:1.13
+    ports:
+      - 8020:80
+    volumes:
+      - ./web-app:/usr/share/nginx/html
+      - ./nginx/site.conf:/etc/nginx/conf.d/site.conf
+    depends_on:
+      - php
+      - composer

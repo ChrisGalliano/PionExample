@@ -1,0 +1,53 @@
+{
+  "name": "pion-example",
+  "version": "1.0.0",
+  "description": "Example of Pion framework usage",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jquery": "^3.3.2",
+    "autoprefixer": "^7.0.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "csswring": "^6.0.0",
+    "es6-promise": "^4.1.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^4.0.1",
+    "gulp-composer": "^0.4.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-hub": "^4.2.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-install": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.3.1",
+    "jquery.cookie": "^1.4.1",
+    "merge-stream": "^1.0.1",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-short-size": "^3.0.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "sass-graph": "^2.2.4",
+    "slideout": "^1.0.1",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "underscore": "^1.8.3",
+    "vinyl-fs": "^3.0.3",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.30.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "videohead"
+  ],
+  "author": "Christian Galliano",
+  "license": "proprietary"
+}

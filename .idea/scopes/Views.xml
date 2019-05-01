@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Views" pattern="file:web-app//src//*View.html" />
+</component>

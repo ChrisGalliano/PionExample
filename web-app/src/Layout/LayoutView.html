@@ -1,0 +1,28 @@
+<?php
+
+  use Pion\Templating\Assets\Manager\AssetsManagerInterface;
+  use Src\Assets\Section\SectionIds;
+
+  assert($assetsManager instanceof AssetsManagerInterface);
+  assert(is_string($title));
+  assert(is_string($content));
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?= $title ?></title>
+    <? $assetsManager->render(SectionIds::SECTION_HEAD) ?>
+  </head>
+  <body>
+    <div class="header">
+      Header
+    </div>
+    <div class="content-container">
+      <?= $content ?>
+    </div>
+    <? $assetsManager->render() ?>
+  </body>
+</html>
