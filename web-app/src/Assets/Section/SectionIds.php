@@ -9,5 +9,5 @@
 
     public const SECTION_HEAD = 'header';
 
-    public const SECTION_FOOTER = 'header';
+    public const SECTION_FOOTER = 'footer';
   }
