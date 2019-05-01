@@ -9,7 +9,7 @@
   use Pion\Templating\Renderable\RenderableInterface;
   use Src\Assets\Scss\ScssResourcePath;
   use Src\Assets\Section\SectionIds;
-  use Src\Assets\Web\WebResourcePath;
+  use Src\Assets\Web\WebAppResourcePath;
 
   final class Layout implements RenderableInterface
   {
@@ -36,7 +36,7 @@
     {
       $engine->assetsManager()
         ->add(
-          new JsResource(new WebResourcePath(__DIR__ . '../../web/assets/compiled/libs/jquery.min.js')),
+          new JsResource(new WebAppResourcePath(__DIR__ . '../../web/assets/compiled/libs/jquery.min.js')),
           SectionIds::SECTION_FOOTER
         )
         ->add(

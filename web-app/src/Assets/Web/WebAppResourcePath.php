@@ -4,7 +4,7 @@
 
   use Pion\Templating\Assets\Resource\Path\ResourcePathInterface;
 
-  class WebResourcePath implements ResourcePathInterface
+  class WebAppResourcePath implements ResourcePathInterface
   {
 
     /**
@@ -15,7 +15,7 @@
 
     public function __construct(string $path)
     {
-      $this->path = $path;
+      $this->path = realpath($path);
     }
 
 
