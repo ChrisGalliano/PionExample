@@ -1,12 +1,33 @@
 version: '3'
 
 services:
+  mariadb:
+    image: mariadb:10.3
+    restart: always
+    volumes:
+      - ./mariadb:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example_pwd
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mariadb:db
+    ports:
+      - 8021:81
+    environment:
+      MYSQL_ROOT_PASSWORD: example_pwd
+    depends_on:
+      - mariadb
+
   php:
     build:
       context: ./
       dockerfile: php/Dockerfile
     volumes:
       - ./web-app:/usr/share/nginx/html
+    depends_on:
+      - mariadb
 
   composer:
     image: composer/composer:php7
@@ -24,8 +45,6 @@ services:
     volumes:
       - ./web-app:/web-app
       - ./gulp:/gulp
-    depends_on:
-      - php
     environment:
       - PION_EXMPL_DEBUG
 

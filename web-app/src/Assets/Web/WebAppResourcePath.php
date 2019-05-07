@@ -22,7 +22,7 @@
     public function get() : string
     {
       return preg_replace(
-        '!^' . preg_quote(WEB_APP_DIR . '/web', '!') . '!',
+        '!^' . preg_quote(ROOT_DIR . '/web', '!') . '!',
         '',
         $this->path
       );

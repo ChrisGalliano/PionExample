@@ -1,0 +1,40 @@
+<?
+  declare(strict_types=1);
+
+  use Src\Assets\Web\WebAppResourcePath;
+  use Src\HelloWorld\DisplayHelloWorldAction;
+  use Src\Products\ProductEntity;
+
+?>
+<div class="homepage">
+  <article class="example-include-image example">
+    <div class="title">
+      Include img:
+    </div>
+    <div class="result">
+      <img src="<?= (new WebAppResourcePath(realpath(__DIR__ . '/../../web/assets/images/logo/logo.jpg')))->get() ?>" alt="logo">
+    </div>
+  </article>
+
+  <article class="example-build-url example">
+    <div class="title">
+      Build url to action:
+    </div>
+    <div class="result">
+      <a href="<?= DisplayHelloWorldAction::route()->path() ?>">-> Go to another action</a>
+    </div>
+  </article>
+
+  <article class="example-products example">
+    <div class="title">
+      Products:
+    </div>
+
+    <div class="result">
+      <? foreach ($products as $product) { ?>
+        <? assert($product instanceof ProductEntity) ?>
+        <div><?= $product->getName() ?></div>
+      <? } ?>
+    </div>
+  </article>
+</div>
