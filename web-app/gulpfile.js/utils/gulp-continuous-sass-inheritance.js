@@ -50,6 +50,11 @@ function gulpBetterSassInheritance(options) {
       buildGraph();
     }
 
+    if (currentFile.isNull()) {
+      buildGraph();
+      return;
+    }
+
     graph.addFile(currentFile.path);
 
     if (currentFile && currentFile.contents.length) {
