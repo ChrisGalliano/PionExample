@@ -30,7 +30,7 @@ services:
       - mariadb
 
   composer:
-    image: composer/composer:php7
+    image: composer
     working_dir: /web-app
     command: install --ignore-platform-reqs
     volumes:
