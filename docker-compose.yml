@@ -14,7 +14,7 @@ services:
     links:
       - mariadb:db
     ports:
-      - 8021:81
+      - 8021:80
     environment:
       MYSQL_ROOT_PASSWORD: example_pwd
     depends_on:
