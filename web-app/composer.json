@@ -21,6 +21,12 @@
   "require": {
     "chrisgalliano/pion": "^1.0.0",
     "doctrine/orm": "^2.6.2",
-    "symfony/yaml": "2.*"
+    "symfony/yaml": "2.*",
+    "symfony/console": "^5.0",
+    "symfony/finder": "^5.0",
+    "symfony/lock": "^5.0",
+    "mtdowling/cron-expression": "1.2.*",
+    "jan-swiecki/simple-annotations": "0.3.1",
+    "symfony/event-dispatcher": "^5.0"
   }
 }

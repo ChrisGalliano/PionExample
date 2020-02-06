@@ -15,3 +15,5 @@ http-client.private.env.json
 web-app/vendor/
 web-app/node_modules/
 web-app/web/assets/compiled/
+php/logs/
+ofelia/logs

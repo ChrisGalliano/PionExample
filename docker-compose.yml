@@ -26,6 +26,8 @@ services:
       dockerfile: php/Dockerfile
     volumes:
       - ./web-app:/usr/share/nginx/html
+      - ./php/logs:/www/tmp/logs
+      - ./php/tmp:/tmp
     depends_on:
       - mariadb
 
@@ -58,3 +60,13 @@ services:
     depends_on:
       - php
       - composer
+
+  ofelia:
+    image: mcuadros/ofelia:latest
+    volumes:
+      - ./ofelia/config.ini:/etc/ofelia/config.ini
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./ofelia/logs:/tmp/logs
+    restart: always
+    depends_on:
+      - php

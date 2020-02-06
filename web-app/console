@@ -1,0 +1,42 @@
+#!/usr/bin/env php
+<?php
+
+
+  require_once 'bootstrap.php';
+
+  use Src\Console\Command\NameResolver\CommandNameResolver;
+  use Src\Console\Output\DatePrefixedConsoleOutput;
+  use Src\Console\SingleInstance\SingleInstanceEventSubscriber;
+  use Symfony\Component\Console\Application;
+  use Symfony\Component\Console\Input\ArgvInput;
+  use Symfony\Component\EventDispatcher\EventDispatcher;
+  use Symfony\Component\Finder\Finder;
+  use Symfony\Component\Finder\SplFileInfo;
+
+
+  try {
+    $application = new Application();
+    $commandNameResolver = new CommandNameResolver();
+
+
+    $dispatcher = new EventDispatcher();
+    $dispatcher->addSubscriber(new SingleInstanceEventSubscriber());
+
+    $application->setDispatcher($dispatcher);
+
+    foreach ((new Finder())->files()->in(SRC_DIR)->name('*ConsoleCommand.php') as $file) {
+      assert($file instanceof SplFileInfo);
+      $relativePathname = $file->getRelativePathname();
+      $commandClassName = $commandNameResolver->getClassNameFromFile($file);
+      $application->add(
+        new $commandClassName(
+          $commandNameResolver->getNameFromClass($commandClassName),
+          $entityManager
+        )
+      );
+    }
+
+    $application->run(new ArgvInput(), new DatePrefixedConsoleOutput());
+  } catch (Exception $e) {
+    print $e->getMessage();
+  }
