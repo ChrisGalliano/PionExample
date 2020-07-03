@@ -1,28 +1,21 @@
-<? /** @noinspection ALL */
+<?php
   declare(strict_types=1);
 
   namespace Src\Layout;
 
-  use Pion\Templating\Assets\Resource\CssResource;
-  use Pion\Templating\Assets\Resource\JsResource;
-  use Pion\Templating\Engine\EngineInterface;
-  use Pion\Templating\Renderable\RenderableInterface;
+  use Peony\Assets\Resource\CssResource;
+  use Peony\Assets\Resource\JsResource;
+  use Peony\Engine\EngineInterface;
+  use Peony\Renderable\RenderableInterface;
   use Src\Assets\Scss\ScssResourcePath;
   use Src\Assets\Section\SectionIds;
   use Src\Assets\Web\WebAppResourcePath;
 
   final class Layout implements RenderableInterface
   {
+    private RenderableInterface $renderable;
 
-    /**
-     * @var \Pion\Templating\Renderable\RenderableInterface
-     */
-    private $renderable;
-
-    /**
-     * @var string
-     */
-    private $title;
+    private string $title;
 
 
     public function __construct(RenderableInterface $renderable, string $title)

@@ -1,4 +1,4 @@
-<?
+<?php
   declare(strict_types=1);
 
 
@@ -17,10 +17,7 @@
 
     use LockableTrait;
 
-    /**
-     * @var EntityManager
-     */
-    private $em;
+    private EntityManager $em;
 
 
     public function __construct(string $name, EntityManager $em)
@@ -60,7 +57,6 @@
     }
 
 
-
     public function callRelease() : void
     {
       $this->release();
@@ -71,5 +67,4 @@
     {
       return false;
     }
-
   }

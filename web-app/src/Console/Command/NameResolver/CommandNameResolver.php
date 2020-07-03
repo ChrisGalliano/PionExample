@@ -1,4 +1,4 @@
-<?
+<?php
   declare(strict_types=1);
 
 
@@ -10,7 +10,6 @@
 
   class CommandNameResolver
   {
-
     public function getNameFromClass(string $class) : string
     {
       return preg_replace(
@@ -54,5 +53,4 @@
 
       return $commandClassName;
     }
-
   }

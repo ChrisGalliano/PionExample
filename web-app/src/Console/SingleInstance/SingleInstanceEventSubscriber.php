@@ -1,4 +1,5 @@
 <?php
+  declare(strict_types=1);
 
 
   namespace Src\Console\SingleInstance;
@@ -10,10 +11,8 @@
   use Symfony\Component\Console\Event\ConsoleTerminateEvent;
   use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-  class SingleInstanceEventSubscriber  implements EventSubscriberInterface
+  class SingleInstanceEventSubscriber implements EventSubscriberInterface
   {
-
-
     /**
      * @return string[][]
      */
@@ -47,6 +46,4 @@
         $command->callRelease();
       }
     }
-
-
   }

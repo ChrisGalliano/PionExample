@@ -1,50 +1,47 @@
-<?
+<?php
   declare(strict_types=1);
 
   namespace Src\Homepage;
 
   use Doctrine\ORM\EntityManager;
-  use GuzzleHttp\Psr7\Uri;
+  use Peony\Assets\Resource\CssResource;
+  use Peony\Assets\Resource\JsResource;
+  use Peony\Engine\EngineInterface;
+  use Peony\Renderable\PredefinedRenderable;
+  use Peony\Response\TemplatedResponse;
   use Pion\Actions\ActionInterface;
   use Pion\Http\Response\ResponseInterface;
   use Pion\Routing\Route\RegexRoute;
   use Pion\Routing\Route\RouteInterface;
-  use Pion\Templating\Engine\EngineInterface;
-  use Pion\Templating\Response\TemplatedResponse;
-  use Psr\Http\Message\UriInterface;
+  use Src\Assets\Scss\ScssResourcePath;
+  use Src\Assets\Section\SectionIds;
+  use Src\Assets\Ts\TsResourcePath;
   use Src\Layout\Layout;
   use Src\Products\ProductEntity;
 
   class DisplayHomepageAction implements ActionInterface
   {
-
-    /**
-     * @var EntityManager
-     */
-    private $em;
-
-
-    public function __construct(EntityManager $em)
+    public function __invoke(EngineInterface $engine, EntityManager $em) : ResponseInterface
     {
-      $this->em = $em;
-    }
+      $engine->assetsManager()
+        ->add(
+          new JsResource(new TsResourcePath(__DIR__ . '/Homepage.ts')),
+          SectionIds::SECTION_FOOTER
+        )
+        ->add(
+          new CssResource(new ScssResourcePath(__DIR__ . '/Homepage.scss')),
+          SectionIds::SECTION_HEAD
+        );
 
-
-    public function render(EngineInterface $engine) : ResponseInterface
-    {
       return new TemplatedResponse(
         new Layout(
-          new HomepageWidget(...$this->em->getRepository(ProductEntity::class)->findAll()),
+          new PredefinedRenderable(__DIR__ . '/HomepageWidgetView.html', [
+            'products' => $em->getRepository(ProductEntity::class)->findAll(),
+          ]),
           'Pion example'
         ),
         $engine
       );
-    }
-
-
-    public function uri() : UriInterface
-    {
-      return new Uri(self::route()->path());
     }
 
 

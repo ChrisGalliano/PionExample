@@ -1,9 +1,11 @@
-<?
+<?php
   declare(strict_types=1);
 
   require __DIR__ . '/../vendor/autoload.php';
 
-  use Pion\Actions\Resolver\ActionResolver;
+  use Peony\Assets\Manager\AssetsManager;
+  use Peony\Engine\Engine;
+  use Pion\Actions\Resolver\ActionArgumentsResolver;
   use Pion\Actions\Resolver\Argument\Value\ObjectValueResolver;
   use Pion\Actions\Resolver\Argument\Value\RequestValueResolver;
   use Pion\Application\Application;
@@ -12,8 +14,6 @@
   use Pion\Http\Response\Sender\ResponseAlreadySentException;
   use Pion\Http\Response\Sender\Sender;
   use Pion\Routing\Routing;
-  use Pion\Templating\Assets\Manager\AssetsManager;
-  use Pion\Templating\Engine\Engine;
   use Src\HelloWorld\DisplayHelloWorldAction;
   use Src\Homepage\DisplayHomepageAction;
   use Whoops\Handler\PrettyPageHandler;
@@ -33,11 +33,11 @@
         DisplayHomepageAction::route(),
         DisplayHelloWorldAction::route()
       ),
-      new ActionResolver(
+      new ActionArgumentsResolver(
         new RequestValueResolver($request),
-        new ObjectValueResolver($entityManager)
-      ),
-      new Engine(new AssetsManager())
+        new ObjectValueResolver($entityManager),
+        new ObjectValueResolver(new Engine(new AssetsManager()))
+      )
     ))->dispatch($request);
   } catch (Exception $e) {
     if (!ENV_IS_DEV_MODE) {

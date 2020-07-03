@@ -1,8 +1,8 @@
-<?
+<?php
   declare(strict_types=1);
 
   use Src\Assets\Web\WebAppResourcePath;
-  use Src\HelloWorld\DisplayHelloWorldAction;
+  use Src\HelloWorld\HelloWorldActionUri;
   use Src\Products\ProductEntity;
 
 ?>
@@ -21,7 +21,7 @@
       Build url to action:
     </div>
     <div class="result">
-      <a href="<?= DisplayHelloWorldAction::route()->path() ?>">-> Go to another action</a>
+      <a href="<?= (new HelloWorldActionUri())->__toString() ?>">-> Go to another action</a>
     </div>
   </article>
 
@@ -31,10 +31,10 @@
     </div>
 
     <div class="result">
-      <? foreach ($products as $product) { ?>
-        <? assert($product instanceof ProductEntity) ?>
+      <?php foreach ($products as $product) { ?>
+        <?php assert($product instanceof ProductEntity) ?>
         <div><?= $product->getName() ?></div>
-      <? } ?>
+      <?php } ?>
     </div>
   </article>
 </div>

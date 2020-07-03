@@ -1,16 +1,14 @@
-<?
+<?php
+  declare(strict_types=1);
 
   namespace Src\Assets\Web;
 
-  use Pion\Templating\Assets\Resource\Path\ResourcePathInterface;
+
+  use Peony\Assets\Resource\Path\ResourcePathInterface;
 
   class WebAppResourcePath implements ResourcePathInterface
   {
-
-    /**
-     * @var string
-     */
-    private $path;
+    private string $path;
 
 
     public function __construct(string $path)

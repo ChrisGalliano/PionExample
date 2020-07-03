@@ -1,4 +1,5 @@
-<?
+<?php
+  declare(strict_types=1);
 
 
   namespace Src\Products;
@@ -14,13 +15,13 @@
     /**
      * @Id @Column(type="integer") @GeneratedValue
      */
-    private $id;
+    private ?int $id;
 
     /**
      * @Column(type="string")
      * @var string|null
      */
-    private $name;
+    private ?string $name;
 
 
     public function getId() : int

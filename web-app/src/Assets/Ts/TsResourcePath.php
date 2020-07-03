@@ -1,17 +1,14 @@
-<?
+<?php
+  declare(strict_types=1);
 
   namespace Src\Assets\Ts;
 
-  use function filemtime;
-  use Pion\Templating\Assets\Resource\Path\ResourcePathInterface;
+
+  use Peony\Assets\Resource\Path\ResourcePathInterface;
 
   class TsResourcePath implements ResourcePathInterface
   {
-
-    /**
-     * @var string
-     */
-    private $ts;
+    private string $ts;
 
 
     public function __construct(string $ts)

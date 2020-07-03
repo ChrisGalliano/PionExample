@@ -1,18 +1,14 @@
-<?
+<?php
   declare(strict_types=1);
 
   namespace Src\Assets\Scss;
 
-  use function filemtime;
-  use Pion\Templating\Assets\Resource\Path\ResourcePathInterface;
+
+  use Peony\Assets\Resource\Path\ResourcePathInterface;
 
   class ScssResourcePath implements ResourcePathInterface
   {
-
-    /**
-     * @var string
-     */
-    private $scss;
+    private string $scss;
 
 
     public function __construct(string $scss)
