@@ -282,6 +282,7 @@
       <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
       <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
       <option name="BLANK_LINES_AROUND_CONSTANTS" value="1" />
+      <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="0" />
       <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
       <option name="SPACE_BEFORE_COLON_IN_RETURN_TYPE" value="true" />
     </PHPCodeStyleSettings>
@@ -497,11 +498,10 @@
     </codeStyleSettings>
     <codeStyleSettings language="PHP">
       <option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
-      <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
+      <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
       <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
       <option name="BLANK_LINES_AROUND_FIELD" value="1" />
       <option name="BLANK_LINES_AROUND_METHOD" value="2" />
-      <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
       <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
       <option name="CALL_PARAMETERS_WRAP" value="1" />
       <option name="METHOD_PARAMETERS_WRAP" value="5" />

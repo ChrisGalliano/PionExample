@@ -5,5 +5,5 @@
       <MessDetectorConfiguration max_messages_per_file="100" tool_path="$PROJECT_DIR$/../Autoline/vendor/phpmd/phpmd/src/bin/phpmd" timeout="10000" />
     </phpmd_settings>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
 </project>
