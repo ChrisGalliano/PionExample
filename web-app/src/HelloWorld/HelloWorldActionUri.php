@@ -9,8 +9,10 @@
 
   class HelloWorldActionUri extends PionUri
   {
-    public function __construct()
+    public function __construct(string $param)
     {
-      parent::__construct(DisplayHelloWorldAction::route()->path());
+      $uri = (new PionUri(DisplayHelloWorldAction::route()->path()))
+        ->withQueryKey('param', $param);
+      parent::__construct($uri->__toString());
     }
   }

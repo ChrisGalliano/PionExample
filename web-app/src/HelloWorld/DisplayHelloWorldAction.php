@@ -16,11 +16,11 @@
 
   class DisplayHelloWorldAction implements ActionInterface
   {
-    public function __invoke(EngineInterface $engine) : ResponseInterface
+    public function __invoke(EngineInterface $engine, string $param) : ResponseInterface
     {
       return new TemplatedResponse(
         new Layout(
-          new PredefinedRenderable(__DIR__ . '/HelloWorldView.html', []),
+          new PredefinedRenderable(__DIR__ . '/HelloWorldView.html', ['param' => $param]),
           'Hello world!'
         ),
         $engine

@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c895c4fbb59da69b1e3c5d9255463b9",
+    "content-hash": "d2232d58da518ffbf58e993d089c6a65",
     "packages": [
         {
             "name": "chrisgalliano/muon",
-            "version": "1.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/MuonForms.git",
-                "reference": "08279c3180d24c5668ea3d095b68f8912c31f352"
+                "reference": "2557d05e4ebca55d86afc6e2f9064e765bcc4517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/MuonForms/zipball/08279c3180d24c5668ea3d095b68f8912c31f352",
-                "reference": "08279c3180d24c5668ea3d095b68f8912c31f352",
+                "url": "https://api.github.com/repos/ChrisGalliano/MuonForms/zipball/2557d05e4ebca55d86afc6e2f9064e765bcc4517",
+                "reference": "2557d05e4ebca55d86afc6e2f9064e765bcc4517",
                 "shasum": ""
             },
             "require": {
-                "chrisgalliano/peony": "2.0.0",
+                "chrisgalliano/peony": "3.0.0",
                 "chrisgalliano/pion": "dev-master",
                 "php": "7.4.*"
             },
@@ -45,20 +45,20 @@
                 }
             ],
             "description": "Muon is a lightweight forms engine designed for the Peony Templating & Pion Framework",
-            "time": "2020-07-03T22:52:42+00:00"
+            "time": "2020-07-04T00:40:00+00:00"
         },
         {
             "name": "chrisgalliano/peony",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/PeonyTemplating.git",
-                "reference": "717e79b299ca16649a78cd5e6630f99e92e0b968"
+                "reference": "0ab0cf8198844999a83ab8bbdfd48f58305a39b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/PeonyTemplating/zipball/717e79b299ca16649a78cd5e6630f99e92e0b968",
-                "reference": "717e79b299ca16649a78cd5e6630f99e92e0b968",
+                "url": "https://api.github.com/repos/ChrisGalliano/PeonyTemplating/zipball/0ab0cf8198844999a83ab8bbdfd48f58305a39b7",
+                "reference": "0ab0cf8198844999a83ab8bbdfd48f58305a39b7",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 }
             ],
             "description": "Peony is a lightweight PHP Templating Engine designed for the Pion Framework",
-            "time": "2020-07-03T20:52:06+00:00"
+            "time": "2020-07-04T00:35:06+00:00"
         },
         {
             "name": "chrisgalliano/pion",
@@ -93,12 +93,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/Pion.git",
-                "reference": "b74bae90c4810a1f16c4b111022262618310ccc2"
+                "reference": "c4851d9429d741d1c779810d899efdcec2708c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/Pion/zipball/b74bae90c4810a1f16c4b111022262618310ccc2",
-                "reference": "b74bae90c4810a1f16c4b111022262618310ccc2",
+                "url": "https://api.github.com/repos/ChrisGalliano/Pion/zipball/c4851d9429d741d1c779810d899efdcec2708c0e",
+                "reference": "c4851d9429d741d1c779810d899efdcec2708c0e",
                 "shasum": ""
             },
             "require": {
@@ -126,7 +126,7 @@
                 }
             ],
             "description": "Light PHP Framework",
-            "time": "2020-07-01T23:11:29+00:00"
+            "time": "2020-07-04T00:14:28+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",

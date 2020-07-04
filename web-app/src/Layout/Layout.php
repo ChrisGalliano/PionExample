@@ -29,7 +29,7 @@
     {
       $engine->assetsManager()
         ->add(
-          new JsResource(new WebAppResourcePath(__DIR__ . '../../web/assets/compiled/libs/jquery.min.js')),
+          new JsResource(new WebAppResourcePath(__DIR__ . '/../../web/assets/compiled/libs/jquery.min.js')),
           SectionIds::SECTION_FOOTER
         )
         ->add(
