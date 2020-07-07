@@ -19,9 +19,9 @@
     "filp/whoops": "2.3.1"
   },
   "require": {
-    "chrisgalliano/pion": "dev-master",
-    "chrisgalliano/peony": "3.0.0",
-    "chrisgalliano/muon": "2.1.0",
+    "chrisgalliano/pion": "2.0.*",
+    "chrisgalliano/peony": "3.0.*",
+    "chrisgalliano/muon": "2.1.*",
     "doctrine/orm": "^2.6.2",
     "symfony/yaml": "2.*",
     "symfony/console": "^5.0",
