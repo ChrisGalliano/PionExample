@@ -93,17 +93,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/Pion.git",
-                "reference": "c4851d9429d741d1c779810d899efdcec2708c0e"
+                "reference": "e5ec7424ebd6524eeb794236bcb09ec78b988c59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/Pion/zipball/c4851d9429d741d1c779810d899efdcec2708c0e",
-                "reference": "c4851d9429d741d1c779810d899efdcec2708c0e",
+                "url": "https://api.github.com/repos/ChrisGalliano/Pion/zipball/e5ec7424ebd6524eeb794236bcb09ec78b988c59",
+                "reference": "e5ec7424ebd6524eeb794236bcb09ec78b988c59",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/psr7": "1.4.2",
+                "php": "7.4.*",
                 "psr/http-message": "1.0.1"
             },
             "require-dev": {
@@ -125,8 +126,8 @@
                     "email": "christian@galliano.info"
                 }
             ],
-            "description": "Light PHP Framework",
-            "time": "2020-07-04T00:14:28+00:00"
+            "description": "Pion is a lightweight PHP Framework",
+            "time": "2020-07-07T19:13:27+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -258,12 +259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "5c5b0e27f6a8d2e03b1bdd061bd9056c4e9d1cf6"
+                "reference": "c35394695e6878de0188fae71cbc135e29c13d1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/5c5b0e27f6a8d2e03b1bdd061bd9056c4e9d1cf6",
-                "reference": "5c5b0e27f6a8d2e03b1bdd061bd9056c4e9d1cf6",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c35394695e6878de0188fae71cbc135e29c13d1a",
+                "reference": "c35394695e6878de0188fae71cbc135e29c13d1a",
                 "shasum": ""
             },
             "require": {
@@ -332,7 +333,7 @@
                 "redis",
                 "xcache"
             ],
-            "time": "2020-05-27T21:03:16+00:00"
+            "time": "2020-07-07T19:04:10+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -340,12 +341,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "3d805e32e7fc4d220cb5dbadb51cc2fe7c9053ca"
+                "reference": "2fc1342333bdec48b7ea05beac0320fd621fc247"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/3d805e32e7fc4d220cb5dbadb51cc2fe7c9053ca",
-                "reference": "3d805e32e7fc4d220cb5dbadb51cc2fe7c9053ca",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/2fc1342333bdec48b7ea05beac0320fd621fc247",
+                "reference": "2fc1342333bdec48b7ea05beac0320fd621fc247",
                 "shasum": ""
             },
             "require": {
@@ -397,7 +398,7 @@
                 "iterators",
                 "php"
             ],
-            "time": "2020-06-21T07:14:22+00:00"
+            "time": "2020-06-22T19:29:24+00:00"
         },
         {
             "name": "doctrine/common",
@@ -481,12 +482,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "df465ccaa77cb5e621ae74b3c077863fa835f277"
+                "reference": "cedf3a2877dd94157390b848e5fc60f94f26d410"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/df465ccaa77cb5e621ae74b3c077863fa835f277",
-                "reference": "df465ccaa77cb5e621ae74b3c077863fa835f277",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/cedf3a2877dd94157390b848e5fc60f94f26d410",
+                "reference": "cedf3a2877dd94157390b848e5fc60f94f26d410",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +497,7 @@
                 "php": "^7.3"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^8.0",
+                "doctrine/coding-standard": "^8.1",
                 "jetbrains/phpstorm-stubs": "^2019.1",
                 "nikic/php-parser": "^4.4",
                 "phpstan/phpstan": "^0.12.31",
@@ -568,7 +569,7 @@
                 "sqlserver",
                 "sqlsrv"
             ],
-            "time": "2020-07-03T20:35:26+00:00"
+            "time": "2020-07-06T15:43:38+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -1443,12 +1444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9f4479a4086b583acfbc56a500d3b49c8b652bad"
+                "reference": "e4a70bd8c5a4382630197b7b87910b3fc0e6b526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9f4479a4086b583acfbc56a500d3b49c8b652bad",
-                "reference": "9f4479a4086b583acfbc56a500d3b49c8b652bad",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e4a70bd8c5a4382630197b7b87910b3fc0e6b526",
+                "reference": "e4a70bd8c5a4382630197b7b87910b3fc0e6b526",
                 "shasum": ""
             },
             "require": {
@@ -1520,7 +1521,7 @@
                 "console",
                 "terminal"
             ],
-            "time": "2020-07-03T18:06:54+00:00"
+            "time": "2020-07-06T13:25:45+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1650,12 +1651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "3bf93073ac43f3e60d099057a0aafc79cf8289c3"
+                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/3bf93073ac43f3e60d099057a0aafc79cf8289c3",
-                "reference": "3bf93073ac43f3e60d099057a0aafc79cf8289c3",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
+                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
                 "shasum": ""
             },
             "require": {
@@ -1704,7 +1705,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-06-06T08:49:21+00:00"
+            "time": "2020-07-06T13:23:11+00:00"
         },
         {
             "name": "symfony/finder",
@@ -2212,12 +2213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "fa63c880563872528523a3fff9c18291194b46ac"
+                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/fa63c880563872528523a3fff9c18291194b46ac",
-                "reference": "fa63c880563872528523a3fff9c18291194b46ac",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
                 "shasum": ""
             },
             "require": {
@@ -2266,7 +2267,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-06-18T19:55:03+00:00"
+            "time": "2020-07-06T13:23:11+00:00"
         },
         {
             "name": "symfony/string",
@@ -2458,12 +2459,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60"
+                "reference": "239e50ae0e1906d32b32ed58bc7d15c81bfc06f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
-                "reference": "57353ec1a34527a2dbbd3c0fb9418ffc008c6f60",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/239e50ae0e1906d32b32ed58bc7d15c81bfc06f0",
+                "reference": "239e50ae0e1906d32b32ed58bc7d15c81bfc06f0",
                 "shasum": ""
             },
             "conflict": {
@@ -2532,6 +2533,7 @@
                 "friendsofsymfony/user-bundle": ">=1.2,<1.3.5",
                 "fuel/core": "<1.8.1",
                 "getgrav/grav": "<1.7-beta.8",
+                "gos/web-socket-bundle": "<1.10.4|>=2,<2.6.1|>=3,<3.3",
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
                 "guzzlehttp/guzzle": ">=4-rc.2,<4.2.4|>=5,<5.3.1|>=6,<6.2.1",
@@ -2726,7 +2728,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2020-07-03T16:50:03+00:00"
+            "time": "2020-07-06T15:00:46+00:00"
         }
     ],
     "aliases": [],

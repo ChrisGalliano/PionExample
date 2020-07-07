@@ -30,6 +30,6 @@
 
     public static function route() : RouteInterface
     {
-      return new MatchPathRoute('/hello-world/', self::class);
+      return new MatchPathRoute('/hello-world/', new self());
     }
   }

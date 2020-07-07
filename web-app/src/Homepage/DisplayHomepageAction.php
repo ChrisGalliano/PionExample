@@ -47,6 +47,6 @@
 
     public static function route() : RouteInterface
     {
-      return new RegexRoute('', self::class, '!^/?$!');
+      return new RegexRoute('', new self(), '!^/?$!');
     }
   }
