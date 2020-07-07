@@ -17,3 +17,4 @@ web-app/node_modules/
 web-app/web/assets/compiled/
 php/logs/
 ofelia/logs
+mariadb
