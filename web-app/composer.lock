@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2232d58da518ffbf58e993d089c6a65",
+    "content-hash": "4f3c3c0be779ea408bdc2d24e6d4656f",
     "packages": [
         {
             "name": "chrisgalliano/muon",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/MuonForms.git",
-                "reference": "2557d05e4ebca55d86afc6e2f9064e765bcc4517"
+                "reference": "092bd9eac040e7d3cd9f1bc69d07c721243e8ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/MuonForms/zipball/2557d05e4ebca55d86afc6e2f9064e765bcc4517",
-                "reference": "2557d05e4ebca55d86afc6e2f9064e765bcc4517",
+                "url": "https://api.github.com/repos/ChrisGalliano/MuonForms/zipball/092bd9eac040e7d3cd9f1bc69d07c721243e8ac0",
+                "reference": "092bd9eac040e7d3cd9f1bc69d07c721243e8ac0",
                 "shasum": ""
             },
             "require": {
-                "chrisgalliano/peony": "3.0.0",
-                "chrisgalliano/pion": "dev-master",
+                "chrisgalliano/peony": "3.0.*",
+                "chrisgalliano/pion": "2.0.*",
                 "php": "7.4.*"
             },
             "require-dev": {
@@ -45,24 +45,24 @@
                 }
             ],
             "description": "Muon is a lightweight forms engine designed for the Peony Templating & Pion Framework",
-            "time": "2020-07-04T00:40:00+00:00"
+            "time": "2020-07-07T20:39:50+00:00"
         },
         {
             "name": "chrisgalliano/peony",
-            "version": "3.0.0",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/PeonyTemplating.git",
-                "reference": "0ab0cf8198844999a83ab8bbdfd48f58305a39b7"
+                "reference": "4ff1ad66cf1e2646297fa9ba4684add192124c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChrisGalliano/PeonyTemplating/zipball/0ab0cf8198844999a83ab8bbdfd48f58305a39b7",
-                "reference": "0ab0cf8198844999a83ab8bbdfd48f58305a39b7",
+                "url": "https://api.github.com/repos/ChrisGalliano/PeonyTemplating/zipball/4ff1ad66cf1e2646297fa9ba4684add192124c3f",
+                "reference": "4ff1ad66cf1e2646297fa9ba4684add192124c3f",
                 "shasum": ""
             },
             "require": {
-                "chrisgalliano/pion": "dev-master",
+                "chrisgalliano/pion": "2.0.*",
                 "php": "7.4.*"
             },
             "require-dev": {
@@ -85,11 +85,11 @@
                 }
             ],
             "description": "Peony is a lightweight PHP Templating Engine designed for the Pion Framework",
-            "time": "2020-07-04T00:35:06+00:00"
+            "time": "2020-07-07T20:27:06+00:00"
         },
         {
             "name": "chrisgalliano/pion",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChrisGalliano/Pion.git",
@@ -2734,7 +2734,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "chrisgalliano/pion": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
