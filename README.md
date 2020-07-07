@@ -9,6 +9,11 @@
 
 ---
 
+# Starting Point
+Start exploring this example from the [web-app/web/index.php](https://github.com/ChrisGalliano/PionExample/blob/master/web-app/web/index.php)
+
+---
+
 
 # Gulp
 ## Watching changes
